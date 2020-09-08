@@ -1,3 +1,3 @@
 # UnionFind
-Princeton's 'Algorithms 1' course on Coursera with Robert Sedewick and Kevin Wayne.
+Princeton's 'Algorithms 1' course on Coursera with Robert Sedewick and Kevin Wayne.<br>
 **Week 1 assignment** - UnionFind data type and the connectivity problem.
