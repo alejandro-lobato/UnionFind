@@ -16,6 +16,10 @@ public class WQuickUnionUF extends QuickUnionUF{
         int j = super.root(q);
 
         if(i == j) return;
+        
+        if(lg[i] < lg[j]) lg[i] = lg[j];
+        else lg[j] = lg[i];
+        
         if(sz[i] < sz[j]){ 
             id[i] = j;
             sz[j] += sz[i];
@@ -24,5 +28,9 @@ public class WQuickUnionUF extends QuickUnionUF{
             id[i] = j;
             sz[i] += sz[j]; 
         }
+    }
+
+    public int find(int i){
+        return lg[root(i)];
     }
 }
